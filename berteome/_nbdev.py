@@ -2,7 +2,10 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"spacifySeq": "00_core.ipynb"}
+index = {"tokenizer": "00_core.ipynb",
+         "model": "00_core.ipynb",
+         "unmasker": "00_core.ipynb",
+         "spacifySeq": "00_core.ipynb"}
 
 modules = ["core.py"]
 

@@ -26,6 +26,115 @@ nb_path: "nbs/00_core.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>I0903 16:11:06.298918 4585483712 filelock.py:274] Lock 140384524005048 acquired on /Users/jeffcole/.cache/huggingface/transformers/e0fb1fe71ed3ee73280750839b42681fbc1c276201aedc10d743b356f078520a.f49f0d5b042c555d2d68e50f1e01e6466f521dd1302884e79d128904c6698245.lock
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+
+ 
+ 
+<div id="5973e69c-8b28-4122-9126-eb5f331f2b9b"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#5973e69c-8b28-4122-9126-eb5f331f2b9b');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "b699021a85084931b7f2baf6d369185f"}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>I0903 16:12:15.734090 4585483712 filelock.py:318] Lock 140384524005048 released on /Users/jeffcole/.cache/huggingface/transformers/e0fb1fe71ed3ee73280750839b42681fbc1c276201aedc10d743b356f078520a.f49f0d5b042c555d2d68e50f1e01e6466f521dd1302884e79d128904c6698245.lock
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Some weights of the model checkpoint at Rostlab/prot_bert were not used when initializing BertForMaskedLM: [&#39;cls.seq_relationship.weight&#39;, &#39;cls.seq_relationship.bias&#39;]
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">unmasker</span><span class="p">(</span><span class="s1">&#39;D L I P T S S K L V V [MASK] D T S L Q V K K A F F A L V T&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[{</span><span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mf">0.11088384687900543</span><span class="p">,</span>
+  <span class="s1">&#39;sequence&#39;</span><span class="p">:</span> <span class="s1">&#39;D L I P T S S K L V V L D T S L Q V K K A F F A L V T&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="s1">&#39;token_str&#39;</span><span class="p">:</span> <span class="s1">&#39;L&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mf">0.0840255618095398</span><span class="p">,</span>
+  <span class="s1">&#39;sequence&#39;</span><span class="p">:</span> <span class="s1">&#39;D L I P T S S K L V V S D T S L Q V K K A F F A L V T&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="s1">&#39;token_str&#39;</span><span class="p">:</span> <span class="s1">&#39;S&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mf">0.07328332215547562</span><span class="p">,</span>
+  <span class="s1">&#39;sequence&#39;</span><span class="p">:</span> <span class="s1">&#39;D L I P T S S K L V V V D T S L Q V K K A F F A L V T&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+  <span class="s1">&#39;token_str&#39;</span><span class="p">:</span> <span class="s1">&#39;V&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mf">0.06921827048063278</span><span class="p">,</span>
+  <span class="s1">&#39;sequence&#39;</span><span class="p">:</span> <span class="s1">&#39;D L I P T S S K L V V K D T S L Q V K K A F F A L V T&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+  <span class="s1">&#39;token_str&#39;</span><span class="p">:</span> <span class="s1">&#39;K&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;score&#39;</span><span class="p">:</span> <span class="mf">0.0638236328959465</span><span class="p">,</span>
+  <span class="s1">&#39;sequence&#39;</span><span class="p">:</span> <span class="s1">&#39;D L I P T S S K L V V I D T S L Q V K K A F F A L V T&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;token&#39;</span><span class="p">:</span> <span class="mi">11</span><span class="p">,</span>
+  <span class="s1">&#39;token_str&#39;</span><span class="p">:</span> <span class="s1">&#39;I&#39;</span><span class="p">}]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -40,7 +149,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="spacifySeq" class="doc_header"><code>spacifySeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>spacifySeq</code>(<strong><code>seq</code></strong>)</p>
+<h4 id="spacifySeq" class="doc_header"><code>spacifySeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L15" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>spacifySeq</code>(<strong><code>seq</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -79,4 +188,8 @@ nb_path: "nbs/00_core.ipynb"
 
 </div>
  
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"47d0619cf3204e3b876e88a1db316ef7": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "1231e6221af84517b73adb976ef3a82f": {"model_name": "ProgressStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "ProgressStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "bar_color": null, "description_width": "initial"}}, "4f24f62a92674a6e8d04b4518a3fa86e": {"model_name": "FloatProgressModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatProgressModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "ProgressView", "bar_style": "success", "description": "Downloading: 100%", "description_tooltip": null, "layout": "IPY_MODEL_47d0619cf3204e3b876e88a1db316ef7", "max": 1684058277.0, "min": 0.0, "orientation": "horizontal", "style": "IPY_MODEL_1231e6221af84517b73adb976ef3a82f", "value": 1684058277.0}}, "278284e3a93f4dd988bed95b095c00e5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5bd0ade7f3164a91b9cc8b5ff46ada73": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": ""}}, "dac079498a2449df8c0e7ccd242251fe": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HTMLView", "description": "", "description_tooltip": null, "layout": "IPY_MODEL_278284e3a93f4dd988bed95b095c00e5", "placeholder": "\u200b", "style": "IPY_MODEL_5bd0ade7f3164a91b9cc8b5ff46ada73", "value": " 1.68G/1.68G [01:09&lt;00:00, 24.3MB/s]"}}, "c4430e6eb0a24f31b8802708f03fd3be": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b699021a85084931b7f2baf6d369185f": {"model_name": "HBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "HBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "HBoxView", "box_style": "", "children": ["IPY_MODEL_4f24f62a92674a6e8d04b4518a3fa86e", "IPY_MODEL_dac079498a2449df8c0e7ccd242251fe"], "layout": "IPY_MODEL_c4430e6eb0a24f31b8802708f03fd3be"}}}, "version_major": 2, "version_minor": 0}
+</script>
 
