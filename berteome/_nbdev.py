@@ -5,7 +5,14 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"tokenizer": "00_core.ipynb",
          "model": "00_core.ipynb",
          "unmasker": "00_core.ipynb",
-         "spacifySeq": "00_core.ipynb"}
+         "spacifySeq": "00_core.ipynb",
+         "allResidueCoordinates": "00_core.ipynb",
+         "allResiduePredictions": "00_core.ipynb",
+         "getTopSeq": "00_core.ipynb",
+         "residuePredictionScore": "00_core.ipynb",
+         "hasNonStandardAA": "00_core.ipynb",
+         "childrenPredictions": "00_core.ipynb",
+         "childrenPPM": "00_core.ipynb"}
 
 modules = ["core.py"]
 
