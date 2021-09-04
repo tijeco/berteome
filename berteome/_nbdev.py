@@ -6,6 +6,7 @@ index = {"tokenizer": "00_core.ipynb",
          "model": "00_core.ipynb",
          "unmasker": "00_core.ipynb",
          "spacifySeq": "00_core.ipynb",
+         "maskifySeq": "00_core.ipynb",
          "allResidueCoordinates": "00_core.ipynb",
          "allResiduePredictions": "00_core.ipynb",
          "getTopSeq": "00_core.ipynb",
@@ -14,7 +15,7 @@ index = {"tokenizer": "00_core.ipynb",
          "childrenPredictions": "00_core.ipynb",
          "childrenPPM": "00_core.ipynb"}
 
-modules = ["core.py"]
+modules = ["berteome.py"]
 
 doc_url = "https://tijeco.github.io/berteome/"
 

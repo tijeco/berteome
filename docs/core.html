@@ -32,7 +32,7 @@ nb_path: "nbs/00_core.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>Some weights of the model checkpoint at Rostlab/prot_bert were not used when initializing BertForMaskedLM: [&#39;cls.seq_relationship.bias&#39;, &#39;cls.seq_relationship.weight&#39;]
+<pre>Some weights of the model checkpoint at Rostlab/prot_bert were not used when initializing BertForMaskedLM: [&#39;cls.seq_relationship.weight&#39;, &#39;cls.seq_relationship.bias&#39;]
 - This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
 </pre>
@@ -70,7 +70,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="spacifySeq" class="doc_header"><code>spacifySeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L16" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>spacifySeq</code>(<strong><code>seq</code></strong>)</p>
+<h4 id="spacifySeq" class="doc_header"><code>spacifySeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L17" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>spacifySeq</code>(<strong><code>seq</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -110,19 +110,30 @@ nb_path: "nbs/00_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">maskifySeq</span><span class="p">(</span><span class="n">seq</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
-  <span class="n">seqList</span> <span class="o">=</span> <span class="n">seq</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-  <span class="n">seqList</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;[MASK]&quot;</span>
-  <span class="k">return</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">aa</span> <span class="o">+</span><span class="s2">&quot; &quot;</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">seqList</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</pre></div>
+<div class="output_wrapper">
+<div class="output">
 
-    </div>
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="maskifySeq" class="doc_header"><code>maskifySeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L21" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>maskifySeq</code>(<strong><code>seq</code></strong>, <strong><code>pos</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
 </div>
 </div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     {% endraw %}
@@ -155,7 +166,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="allResidueCoordinates" class="doc_header"><code>allResidueCoordinates</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L20" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>allResidueCoordinates</code>(<strong><code>seq</code></strong>, <strong><code>residue</code></strong>)</p>
+<h4 id="allResidueCoordinates" class="doc_header"><code>allResidueCoordinates</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L27" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>allResidueCoordinates</code>(<strong><code>seq</code></strong>, <strong><code>residue</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -186,7 +197,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="allResiduePredictions" class="doc_header"><code>allResiduePredictions</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>allResiduePredictions</code>(<strong><code>seq</code></strong>)</p>
+<h4 id="allResiduePredictions" class="doc_header"><code>allResiduePredictions</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L32" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>allResiduePredictions</code>(<strong><code>seq</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -233,7 +244,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="getTopSeq" class="doc_header"><code>getTopSeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L37" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>getTopSeq</code>(<strong><code>allPredictions</code></strong>)</p>
+<h4 id="getTopSeq" class="doc_header"><code>getTopSeq</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L44" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>getTopSeq</code>(<strong><code>allPredictions</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -264,7 +275,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="residuePredictionScore" class="doc_header"><code>residuePredictionScore</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L44" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>residuePredictionScore</code>(<strong><code>allPredictions</code></strong>, <strong><code>seq</code></strong>)</p>
+<h4 id="residuePredictionScore" class="doc_header"><code>residuePredictionScore</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L51" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>residuePredictionScore</code>(<strong><code>allPredictions</code></strong>, <strong><code>seq</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -295,7 +306,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="hasNonStandardAA" class="doc_header"><code>hasNonStandardAA</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L88" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>hasNonStandardAA</code>(<strong><code>seq</code></strong>, <strong><code>alphabet</code></strong>=<em><code>'ACDEFGHIKLMNPQRSTVWY'</code></em>)</p>
+<h4 id="hasNonStandardAA" class="doc_header"><code>hasNonStandardAA</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L94" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>hasNonStandardAA</code>(<strong><code>seq</code></strong>, <strong><code>alphabet</code></strong>=<em><code>'ACDEFGHIKLMNPQRSTVWY'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -326,7 +337,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="childrenPredictions" class="doc_header"><code>childrenPredictions</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L93" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>childrenPredictions</code>(<strong><code>allPredictions</code></strong>, <strong><code>seq</code></strong>)</p>
+<h4 id="childrenPredictions" class="doc_header"><code>childrenPredictions</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L99" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>childrenPredictions</code>(<strong><code>allPredictions</code></strong>, <strong><code>seq</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -357,7 +368,7 @@ nb_path: "nbs/00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="childrenPPM" class="doc_header"><code>childrenPPM</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/core.py#L113" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>childrenPPM</code>(<strong><code>childrenScores</code></strong>)</p>
+<h4 id="childrenPPM" class="doc_header"><code>childrenPPM</code><a href="https://github.com/tijeco/berteome/tree/{branch}/berteome/berteome.py#L119" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>childrenPPM</code>(<strong><code>childrenScores</code></strong>)</p>
 </blockquote>
 
 </div>

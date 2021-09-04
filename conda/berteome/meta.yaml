@@ -1,0 +1,46 @@
+package:
+  name: berteome
+  version: 0.0.1
+source:
+  sha256: c153bc83c23120d36f55eceec0aa88101095300773d5ca80572fd6b8e6d48137
+  url: https://files.pythonhosted.org/packages/7d/54/ee24caea004ed79b743607d289ed760922f0d11801140193f99edbfce91e/berteome-0.0.1.tar.gz
+about:
+  dev_url: https://tijeco.github.io
+  doc_url: https://tijeco.github.io
+  home: https://tijeco.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: A library to analyze and explore protein sequences using BERT models
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - tijeco
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - pandas
+  - numpy
+  - seqlogo
+  - transformers==4.10.0
+  - datasets==1.11.0
+  - torch
+  - torchvision
+  run:
+  - pip
+  - python
+  - packaging
+  - pandas
+  - numpy
+  - seqlogo
+  - transformers==4.10.0
+  - datasets==1.11.0
+  - torch
+  - torchvision
+test:
+  imports:
+  - berteome
