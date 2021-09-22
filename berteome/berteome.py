@@ -18,9 +18,9 @@ def spacifySeq(seq):
   return "".join([ aa +" " for aa in seq]).strip()
 
 # Cell
-def maskifySeq(seq, pos):
+def maskifySeq(seq, pos, mask="[MASK]"):
   seqList = seq.split()
-  seqList[pos] = "[MASK]"
+  seqList[pos] = mask
   return "".join(aa +" " for aa in seqList).strip()
 
 # Cell
