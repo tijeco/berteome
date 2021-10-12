@@ -10,8 +10,14 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Title
+      title: Unified approach to interface with both ProtBERT and ESM
       url: core.html
+    - output: web,pdf
+      title: Title
+      url: bert.html
+    - output: web,pdf
+      title: OOP attempt
+      url: esm.html
     output: web
     title: berteome
   output: web

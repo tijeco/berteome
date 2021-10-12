@@ -2,6 +2,435 @@
 
 
 
+```python
+from berteome import prot_bert
+```
+
+    Some weights of the model checkpoint at Rostlab/prot_bert were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+    - This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+    - This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+
+
+```python
+from berteome import esm
+```
+
+```python
+from berteome import berteomeDF
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ImportError                               Traceback (most recent call last)
+
+    /var/folders/x1/098shbqn0rs8vd5ybvyb0k9h0000gn/T/ipykernel_70195/4107489332.py in <module>
+    ----> 1 from berteome import berteomeDF
+    
+
+    ImportError: cannot import name 'berteomeDF' from 'berteome' (/Users/jeffcole/miniconda3/envs/berteome/lib/python3.7/site-packages/berteome-0.1.0-py3.7.egg/berteome/__init__.py)
+
+
+```python
+prot_bert.bertPredictionDF("MENDEL")
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>wt</th>
+      <th>wtIndex</th>
+      <th>A</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>...</th>
+      <th>M</th>
+      <th>N</th>
+      <th>P</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>V</th>
+      <th>W</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M</td>
+      <td>1</td>
+      <td>0.036685</td>
+      <td>0.011501</td>
+      <td>0.048229</td>
+      <td>0.118868</td>
+      <td>0.024064</td>
+      <td>0.039190</td>
+      <td>0.012617</td>
+      <td>0.066477</td>
+      <td>...</td>
+      <td>0.076580</td>
+      <td>0.072637</td>
+      <td>0.024714</td>
+      <td>0.038660</td>
+      <td>0.043091</td>
+      <td>0.070257</td>
+      <td>0.056526</td>
+      <td>0.049911</td>
+      <td>0.007779</td>
+      <td>0.021692</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>E</td>
+      <td>2</td>
+      <td>0.045712</td>
+      <td>0.015659</td>
+      <td>0.041913</td>
+      <td>0.074816</td>
+      <td>0.037146</td>
+      <td>0.044317</td>
+      <td>0.018260</td>
+      <td>0.073063</td>
+      <td>...</td>
+      <td>0.043572</td>
+      <td>0.062655</td>
+      <td>0.025272</td>
+      <td>0.036905</td>
+      <td>0.055532</td>
+      <td>0.064412</td>
+      <td>0.049945</td>
+      <td>0.056779</td>
+      <td>0.012689</td>
+      <td>0.029887</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>N</td>
+      <td>3</td>
+      <td>0.043558</td>
+      <td>0.009684</td>
+      <td>0.162566</td>
+      <td>0.184336</td>
+      <td>0.033777</td>
+      <td>0.044654</td>
+      <td>0.012353</td>
+      <td>0.052622</td>
+      <td>...</td>
+      <td>0.041478</td>
+      <td>0.041984</td>
+      <td>0.019989</td>
+      <td>0.025511</td>
+      <td>0.029428</td>
+      <td>0.048098</td>
+      <td>0.030299</td>
+      <td>0.054734</td>
+      <td>0.007428</td>
+      <td>0.024920</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>D</td>
+      <td>4</td>
+      <td>0.042079</td>
+      <td>0.013243</td>
+      <td>0.049744</td>
+      <td>0.086189</td>
+      <td>0.039733</td>
+      <td>0.055907</td>
+      <td>0.016860</td>
+      <td>0.073291</td>
+      <td>...</td>
+      <td>0.040078</td>
+      <td>0.060817</td>
+      <td>0.032022</td>
+      <td>0.039686</td>
+      <td>0.046224</td>
+      <td>0.062319</td>
+      <td>0.044898</td>
+      <td>0.058933</td>
+      <td>0.010875</td>
+      <td>0.026594</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>E</td>
+      <td>5</td>
+      <td>0.046638</td>
+      <td>0.018769</td>
+      <td>0.079816</td>
+      <td>0.086908</td>
+      <td>0.050634</td>
+      <td>0.050462</td>
+      <td>0.022395</td>
+      <td>0.074495</td>
+      <td>...</td>
+      <td>0.028960</td>
+      <td>0.062229</td>
+      <td>0.023877</td>
+      <td>0.030532</td>
+      <td>0.040486</td>
+      <td>0.065190</td>
+      <td>0.044934</td>
+      <td>0.068032</td>
+      <td>0.012155</td>
+      <td>0.038031</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>L</td>
+      <td>6</td>
+      <td>0.035695</td>
+      <td>0.008615</td>
+      <td>0.060928</td>
+      <td>0.142576</td>
+      <td>0.019581</td>
+      <td>0.046287</td>
+      <td>0.013043</td>
+      <td>0.060374</td>
+      <td>...</td>
+      <td>0.037424</td>
+      <td>0.090177</td>
+      <td>0.019358</td>
+      <td>0.032733</td>
+      <td>0.043823</td>
+      <td>0.045863</td>
+      <td>0.043224</td>
+      <td>0.045121</td>
+      <td>0.009800</td>
+      <td>0.021241</td>
+    </tr>
+  </tbody>
+</table>
+<p>6 rows × 22 columns</p>
+</div>
+
+
+
+```python
+esm.esmPredictionDF("MENDEL")
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>wt</th>
+      <th>wtIndex</th>
+      <th>A</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>...</th>
+      <th>M</th>
+      <th>N</th>
+      <th>P</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>V</th>
+      <th>W</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M</td>
+      <td>1</td>
+      <td>0.033952</td>
+      <td>0.007039</td>
+      <td>0.054737</td>
+      <td>0.063365</td>
+      <td>0.018590</td>
+      <td>0.029267</td>
+      <td>0.010216</td>
+      <td>0.028865</td>
+      <td>...</td>
+      <td>0.456082</td>
+      <td>0.029166</td>
+      <td>0.023344</td>
+      <td>0.019043</td>
+      <td>0.023603</td>
+      <td>0.030170</td>
+      <td>0.023352</td>
+      <td>0.033982</td>
+      <td>0.004791</td>
+      <td>0.013076</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>E</td>
+      <td>2</td>
+      <td>0.058999</td>
+      <td>0.021031</td>
+      <td>0.054622</td>
+      <td>0.072057</td>
+      <td>0.037186</td>
+      <td>0.053090</td>
+      <td>0.025848</td>
+      <td>0.065879</td>
+      <td>...</td>
+      <td>0.024329</td>
+      <td>0.059710</td>
+      <td>0.035728</td>
+      <td>0.040369</td>
+      <td>0.052300</td>
+      <td>0.073618</td>
+      <td>0.057319</td>
+      <td>0.062975</td>
+      <td>0.014029</td>
+      <td>0.030339</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>N</td>
+      <td>3</td>
+      <td>0.055626</td>
+      <td>0.014060</td>
+      <td>0.077887</td>
+      <td>0.122153</td>
+      <td>0.034727</td>
+      <td>0.058822</td>
+      <td>0.019171</td>
+      <td>0.061401</td>
+      <td>...</td>
+      <td>0.031318</td>
+      <td>0.044172</td>
+      <td>0.029668</td>
+      <td>0.034335</td>
+      <td>0.052372</td>
+      <td>0.057394</td>
+      <td>0.047432</td>
+      <td>0.069432</td>
+      <td>0.013282</td>
+      <td>0.025859</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>D</td>
+      <td>4</td>
+      <td>0.044610</td>
+      <td>0.017627</td>
+      <td>0.036298</td>
+      <td>0.071025</td>
+      <td>0.031629</td>
+      <td>0.049782</td>
+      <td>0.023518</td>
+      <td>0.061833</td>
+      <td>...</td>
+      <td>0.058515</td>
+      <td>0.043762</td>
+      <td>0.037227</td>
+      <td>0.054164</td>
+      <td>0.055120</td>
+      <td>0.060091</td>
+      <td>0.052912</td>
+      <td>0.070125</td>
+      <td>0.017567</td>
+      <td>0.027211</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>E</td>
+      <td>5</td>
+      <td>0.045966</td>
+      <td>0.027927</td>
+      <td>0.047431</td>
+      <td>0.057574</td>
+      <td>0.052450</td>
+      <td>0.054545</td>
+      <td>0.030670</td>
+      <td>0.071293</td>
+      <td>...</td>
+      <td>0.025417</td>
+      <td>0.051106</td>
+      <td>0.033450</td>
+      <td>0.038940</td>
+      <td>0.055194</td>
+      <td>0.076423</td>
+      <td>0.050060</td>
+      <td>0.063550</td>
+      <td>0.017663</td>
+      <td>0.038091</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>L</td>
+      <td>6</td>
+      <td>0.048226</td>
+      <td>0.016231</td>
+      <td>0.060284</td>
+      <td>0.100391</td>
+      <td>0.031534</td>
+      <td>0.052584</td>
+      <td>0.023015</td>
+      <td>0.065281</td>
+      <td>...</td>
+      <td>0.029354</td>
+      <td>0.063840</td>
+      <td>0.025546</td>
+      <td>0.039313</td>
+      <td>0.062937</td>
+      <td>0.064147</td>
+      <td>0.053790</td>
+      <td>0.060177</td>
+      <td>0.013714</td>
+      <td>0.028147</td>
+    </tr>
+  </tbody>
+</table>
+<p>6 rows × 22 columns</p>
+</div>
+
+
+
 This file will become your README and also the index of your documentation.
 
 ## Install
@@ -129,6 +558,214 @@ Berteome also makes it possible to generate all possible predictions for all res
 
 ```python
 mendel_all_predictions = berteome.allResiduePredictions("MENDEL")
+```
+
+This provides the raw output, so berteome also has a function to make it a more parseable panda dataframe using `residuePredictionScore()`
+
+```python
+mendel_all_predictionDF =  berteome.residuePredictionScore(mendel_all_predictions, "MENDEL")
+mendel_all_predictionDF
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>wt</th>
+      <th>wtIndex</th>
+      <th>wtScore</th>
+      <th>A</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>...</th>
+      <th>M</th>
+      <th>N</th>
+      <th>P</th>
+      <th>Q</th>
+      <th>R</th>
+      <th>S</th>
+      <th>T</th>
+      <th>V</th>
+      <th>W</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M</td>
+      <td>1</td>
+      <td>0.076580</td>
+      <td>0.036685</td>
+      <td>0.011501</td>
+      <td>0.048229</td>
+      <td>0.118868</td>
+      <td>0.024064</td>
+      <td>0.039190</td>
+      <td>0.012617</td>
+      <td>...</td>
+      <td>0.076580</td>
+      <td>0.072637</td>
+      <td>0.024714</td>
+      <td>0.038660</td>
+      <td>0.043091</td>
+      <td>0.070257</td>
+      <td>0.056526</td>
+      <td>0.049911</td>
+      <td>0.007779</td>
+      <td>0.021692</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>E</td>
+      <td>2</td>
+      <td>0.074816</td>
+      <td>0.045712</td>
+      <td>0.015659</td>
+      <td>0.041913</td>
+      <td>0.074816</td>
+      <td>0.037146</td>
+      <td>0.044317</td>
+      <td>0.018260</td>
+      <td>...</td>
+      <td>0.043572</td>
+      <td>0.062655</td>
+      <td>0.025272</td>
+      <td>0.036905</td>
+      <td>0.055532</td>
+      <td>0.064412</td>
+      <td>0.049945</td>
+      <td>0.056779</td>
+      <td>0.012689</td>
+      <td>0.029887</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>N</td>
+      <td>3</td>
+      <td>0.041984</td>
+      <td>0.043558</td>
+      <td>0.009684</td>
+      <td>0.162566</td>
+      <td>0.184336</td>
+      <td>0.033777</td>
+      <td>0.044654</td>
+      <td>0.012353</td>
+      <td>...</td>
+      <td>0.041478</td>
+      <td>0.041984</td>
+      <td>0.019989</td>
+      <td>0.025511</td>
+      <td>0.029428</td>
+      <td>0.048098</td>
+      <td>0.030299</td>
+      <td>0.054734</td>
+      <td>0.007428</td>
+      <td>0.024920</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>D</td>
+      <td>4</td>
+      <td>0.049744</td>
+      <td>0.042079</td>
+      <td>0.013243</td>
+      <td>0.049744</td>
+      <td>0.086189</td>
+      <td>0.039733</td>
+      <td>0.055907</td>
+      <td>0.016860</td>
+      <td>...</td>
+      <td>0.040078</td>
+      <td>0.060817</td>
+      <td>0.032022</td>
+      <td>0.039686</td>
+      <td>0.046224</td>
+      <td>0.062319</td>
+      <td>0.044898</td>
+      <td>0.058933</td>
+      <td>0.010875</td>
+      <td>0.026594</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>E</td>
+      <td>5</td>
+      <td>0.086908</td>
+      <td>0.046638</td>
+      <td>0.018769</td>
+      <td>0.079816</td>
+      <td>0.086908</td>
+      <td>0.050634</td>
+      <td>0.050462</td>
+      <td>0.022395</td>
+      <td>...</td>
+      <td>0.028960</td>
+      <td>0.062229</td>
+      <td>0.023877</td>
+      <td>0.030532</td>
+      <td>0.040486</td>
+      <td>0.065190</td>
+      <td>0.044934</td>
+      <td>0.068032</td>
+      <td>0.012155</td>
+      <td>0.038031</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>L</td>
+      <td>6</td>
+      <td>0.056766</td>
+      <td>0.035695</td>
+      <td>0.008615</td>
+      <td>0.060928</td>
+      <td>0.142576</td>
+      <td>0.019581</td>
+      <td>0.046287</td>
+      <td>0.013043</td>
+      <td>...</td>
+      <td>0.037424</td>
+      <td>0.090177</td>
+      <td>0.019358</td>
+      <td>0.032733</td>
+      <td>0.043823</td>
+      <td>0.045863</td>
+      <td>0.043224</td>
+      <td>0.045121</td>
+      <td>0.009800</td>
+      <td>0.021241</td>
+    </tr>
+  </tbody>
+</table>
+<p>6 rows × 23 columns</p>
+</div>
+
+
+
+For each residue (wt), the score of the actual residue is provided as well as the score for all 20 amino acids. If needed, the raw output looks like this.
+
+```python
 mendel_all_predictions
 ```
 
@@ -857,208 +1494,3 @@ mendel_all_predictions
        'token_str': '[ M A S K ]'}]]
 
 
-
-This provides the raw output, so berteome also has a function to make it a more parseable panda dataframe using `residuePredictionScore()`
-
-```python
-mendel_all_predictionDF =  berteome.residuePredictionScore(mendel_all_predictions, "MENDEL")
-mendel_all_predictionDF
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>wt</th>
-      <th>wtIndex</th>
-      <th>wtScore</th>
-      <th>A</th>
-      <th>C</th>
-      <th>D</th>
-      <th>E</th>
-      <th>F</th>
-      <th>G</th>
-      <th>H</th>
-      <th>...</th>
-      <th>M</th>
-      <th>N</th>
-      <th>P</th>
-      <th>Q</th>
-      <th>R</th>
-      <th>S</th>
-      <th>T</th>
-      <th>V</th>
-      <th>W</th>
-      <th>Y</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>M</td>
-      <td>1</td>
-      <td>0.076580</td>
-      <td>0.036685</td>
-      <td>0.011501</td>
-      <td>0.048229</td>
-      <td>0.118868</td>
-      <td>0.024064</td>
-      <td>0.039190</td>
-      <td>0.012617</td>
-      <td>...</td>
-      <td>0.076580</td>
-      <td>0.072637</td>
-      <td>0.024714</td>
-      <td>0.038660</td>
-      <td>0.043091</td>
-      <td>0.070257</td>
-      <td>0.056526</td>
-      <td>0.049911</td>
-      <td>0.007779</td>
-      <td>0.021692</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>E</td>
-      <td>2</td>
-      <td>0.074816</td>
-      <td>0.045712</td>
-      <td>0.015659</td>
-      <td>0.041913</td>
-      <td>0.074816</td>
-      <td>0.037146</td>
-      <td>0.044317</td>
-      <td>0.018260</td>
-      <td>...</td>
-      <td>0.043572</td>
-      <td>0.062655</td>
-      <td>0.025272</td>
-      <td>0.036905</td>
-      <td>0.055532</td>
-      <td>0.064412</td>
-      <td>0.049945</td>
-      <td>0.056779</td>
-      <td>0.012689</td>
-      <td>0.029887</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>N</td>
-      <td>3</td>
-      <td>0.041984</td>
-      <td>0.043558</td>
-      <td>0.009684</td>
-      <td>0.162566</td>
-      <td>0.184336</td>
-      <td>0.033777</td>
-      <td>0.044654</td>
-      <td>0.012353</td>
-      <td>...</td>
-      <td>0.041478</td>
-      <td>0.041984</td>
-      <td>0.019989</td>
-      <td>0.025511</td>
-      <td>0.029428</td>
-      <td>0.048098</td>
-      <td>0.030299</td>
-      <td>0.054734</td>
-      <td>0.007428</td>
-      <td>0.024920</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>D</td>
-      <td>4</td>
-      <td>0.049744</td>
-      <td>0.042079</td>
-      <td>0.013243</td>
-      <td>0.049744</td>
-      <td>0.086189</td>
-      <td>0.039733</td>
-      <td>0.055907</td>
-      <td>0.016860</td>
-      <td>...</td>
-      <td>0.040078</td>
-      <td>0.060817</td>
-      <td>0.032022</td>
-      <td>0.039686</td>
-      <td>0.046224</td>
-      <td>0.062319</td>
-      <td>0.044898</td>
-      <td>0.058933</td>
-      <td>0.010875</td>
-      <td>0.026594</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>E</td>
-      <td>5</td>
-      <td>0.086908</td>
-      <td>0.046638</td>
-      <td>0.018769</td>
-      <td>0.079816</td>
-      <td>0.086908</td>
-      <td>0.050634</td>
-      <td>0.050462</td>
-      <td>0.022395</td>
-      <td>...</td>
-      <td>0.028960</td>
-      <td>0.062229</td>
-      <td>0.023877</td>
-      <td>0.030532</td>
-      <td>0.040486</td>
-      <td>0.065190</td>
-      <td>0.044934</td>
-      <td>0.068032</td>
-      <td>0.012155</td>
-      <td>0.038031</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>L</td>
-      <td>6</td>
-      <td>0.056766</td>
-      <td>0.035695</td>
-      <td>0.008615</td>
-      <td>0.060928</td>
-      <td>0.142576</td>
-      <td>0.019581</td>
-      <td>0.046287</td>
-      <td>0.013043</td>
-      <td>...</td>
-      <td>0.037424</td>
-      <td>0.090177</td>
-      <td>0.019358</td>
-      <td>0.032733</td>
-      <td>0.043823</td>
-      <td>0.045863</td>
-      <td>0.043224</td>
-      <td>0.045121</td>
-      <td>0.009800</td>
-      <td>0.021241</td>
-    </tr>
-  </tbody>
-</table>
-<p>6 rows × 23 columns</p>
-</div>
-
-
-
-For each residue (wt), the score of the actual residue is provided as well as the score for all 20 amino acids

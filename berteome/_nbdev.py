@@ -2,20 +2,28 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"tokenizer": "00_core.ipynb",
-         "model": "00_core.ipynb",
-         "unmasker": "00_core.ipynb",
-         "spacifySeq": "00_core.ipynb",
-         "maskifySeq": "00_core.ipynb",
-         "allResidueCoordinates": "00_core.ipynb",
+index = {"tokenizer": "01_bert.ipynb",
+         "model": "01_bert.ipynb",
+         "unmasker": "01_bert.ipynb",
+         "spacifySeq": "01_bert.ipynb",
+         "maskifySeq": "02_esm.ipynb",
+         "allResidueCoordinates": "01_bert.ipynb",
          "allResiduePredictions": "00_core.ipynb",
          "getTopSeq": "00_core.ipynb",
          "residuePredictionScore": "00_core.ipynb",
          "hasNonStandardAA": "00_core.ipynb",
-         "childrenPredictions": "00_core.ipynb",
-         "childrenPPM": "00_core.ipynb"}
+         "modelPredDF": "00_dataframe.ipynb",
+         "aaPosDict": "01_bert.ipynb",
+         "bertPredictionDF": "01_bert.ipynb",
+         "batch_converter": "02_esm.ipynb",
+         "naturalAAIndex": "02_esm.ipynb",
+         "getNatProbs": "02_esm.ipynb",
+         "esmPredictionDF": "02_esm.ipynb"}
 
-modules = ["berteome.py"]
+modules = ["berteome.py",
+           "berteomeDF.py",
+           "prot_bert.py",
+           "esm.py"]
 
 doc_url = "https://tijeco.github.io/berteome/"
 

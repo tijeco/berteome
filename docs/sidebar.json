@@ -1,6 +1,8 @@
 {
   "berteome": {
     "Overview": "/",
-    "Title": "core.html"
+    "Unified approach to interface with both ProtBERT and ESM": "core.html",
+    "Title": "bert.html",
+    "OOP attempt": "esm.html"
   }
 }
