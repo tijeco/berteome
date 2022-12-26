@@ -8,9 +8,9 @@ import pandas as pd
 
 # %% ../notebooks/final/02_generate_sequences.ipynb 3
 def top_k_variants(berteome, k):
-  seqList = list(berteome.predDf["wt"])
+  seqList = list(berteome.df["wt"])
   variantDict = {}
-  for index, row in berteome.predDf.iterrows():
+  for index, row in berteome.df.iterrows():
     aa_scores = row[list(berteome.aas)]
     top_k_scores = aa_scores.where(aa_scores.index != row["wt"]).sort_values(ascending=False).head(k)
     top_k_subs = list(top_k_scores.index)
