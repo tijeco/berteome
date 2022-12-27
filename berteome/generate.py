@@ -5,6 +5,7 @@ __all__ = ['top_k_variants']
 
 # %% ../notebooks/final/02_generate_sequences.ipynb 1
 import pandas as pd
+import numpy as np
 
 # %% ../notebooks/final/02_generate_sequences.ipynb 3
 def top_k_variants(berteome, k):
