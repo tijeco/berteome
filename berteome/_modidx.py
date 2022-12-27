@@ -31,4 +31,5 @@ d = { 'settings': { 'branch': 'master',
                                    'berteome.berteome.naturalAAIndex': ('residue_predictions.html#naturalaaindex', 'berteome/berteome.py'),
                                    'berteome.berteome.run_model': ('residue_predictions.html#run_model', 'berteome/berteome.py'),
                                    'berteome.berteome.tokenizeSeq': ('residue_predictions.html#tokenizeseq', 'berteome/berteome.py')},
-            'berteome.generate': {'berteome.generate.top_k_variants': ('generate_sequences.html#top_k_variants', 'berteome/generate.py')}}}
+            'berteome.generate': { 'berteome.generate.n_random_seqs': ('generate_sequences.html#n_random_seqs', 'berteome/generate.py'),
+                                   'berteome.generate.top_k_variants': ('generate_sequences.html#top_k_variants', 'berteome/generate.py')}}}
