@@ -41,6 +41,16 @@ To load prot_bert model, run the following:
 bert_tokenizer, bert_model = berteome_models.load_model("Rostlab/prot_bert")
 ```
 
+    Downloading:   0%|          | 0.00/81.0 [00:00<?, ?B/s]
+
+    Downloading:   0%|          | 0.00/112 [00:00<?, ?B/s]
+
+    Downloading:   0%|          | 0.00/86.0 [00:00<?, ?B/s]
+
+    Downloading:   0%|          | 0.00/361 [00:00<?, ?B/s]
+
+    Downloading:   0%|          | 0.00/1.68G [00:00<?, ?B/s]
+
     Some weights of the model checkpoint at Rostlab/prot_bert were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
     - This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
     - This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
@@ -68,7 +78,7 @@ mendel_berteome = berteome.modelPredDF("MENDEL",bert_tokenizer, bert_model)
 mendel_berteome.df
 ```
 
-  <div id="df-fc9f64ed-b8b8-433f-bc51-a92954702041">
+  <div id="df-e5f727fc-7e2a-4d82-b367-c0539274e080">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -116,20 +126,20 @@ mendel_berteome.df
       <th>0</th>
       <td>M</td>
       <td>1</td>
-      <td>0.076601</td>
-      <td>16.680502</td>
+      <td>0.076602</td>
+      <td>16.680519</td>
       <td>E</td>
-      <td>0.118907</td>
+      <td>0.118906</td>
       <td>0.036697</td>
       <td>0.011504</td>
       <td>0.048245</td>
-      <td>0.118907</td>
+      <td>0.118906</td>
       <td>...</td>
-      <td>0.076601</td>
+      <td>0.076602</td>
       <td>0.072661</td>
       <td>0.024722</td>
       <td>0.038672</td>
-      <td>0.043104</td>
+      <td>0.043105</td>
       <td>0.070280</td>
       <td>0.056544</td>
       <td>0.049927</td>
@@ -141,7 +151,7 @@ mendel_berteome.df
       <td>E</td>
       <td>2</td>
       <td>0.074830</td>
-      <td>17.599150</td>
+      <td>17.599154</td>
       <td>L</td>
       <td>0.106501</td>
       <td>0.045721</td>
@@ -154,7 +164,7 @@ mendel_berteome.df
       <td>0.025277</td>
       <td>0.036911</td>
       <td>0.055543</td>
-      <td>0.064424</td>
+      <td>0.064425</td>
       <td>0.049955</td>
       <td>0.056789</td>
       <td>0.012691</td>
@@ -165,20 +175,20 @@ mendel_berteome.df
       <td>N</td>
       <td>3</td>
       <td>0.041990</td>
-      <td>14.518506</td>
+      <td>14.518531</td>
       <td>E</td>
-      <td>0.184365</td>
+      <td>0.184364</td>
       <td>0.043564</td>
       <td>0.009685</td>
-      <td>0.162591</td>
-      <td>0.184365</td>
+      <td>0.162590</td>
+      <td>0.184364</td>
       <td>...</td>
       <td>0.041484</td>
       <td>0.041990</td>
       <td>0.019992</td>
       <td>0.025515</td>
       <td>0.029433</td>
-      <td>0.048105</td>
+      <td>0.048106</td>
       <td>0.030303</td>
       <td>0.054742</td>
       <td>0.007430</td>
@@ -189,10 +199,10 @@ mendel_berteome.df
       <td>D</td>
       <td>4</td>
       <td>0.049748</td>
-      <td>17.561045</td>
+      <td>17.561047</td>
       <td>L</td>
-      <td>0.109087</td>
-      <td>0.042082</td>
+      <td>0.109088</td>
+      <td>0.042083</td>
       <td>0.013244</td>
       <td>0.049748</td>
       <td>0.086194</td>
@@ -213,12 +223,12 @@ mendel_berteome.df
       <td>E</td>
       <td>5</td>
       <td>0.086915</td>
-      <td>17.921403</td>
+      <td>17.921406</td>
       <td>L</td>
-      <td>0.090806</td>
+      <td>0.090807</td>
       <td>0.046641</td>
       <td>0.018770</td>
-      <td>0.079823</td>
+      <td>0.079822</td>
       <td>0.086915</td>
       <td>...</td>
       <td>0.028962</td>
@@ -237,7 +247,7 @@ mendel_berteome.df
       <td>L</td>
       <td>6</td>
       <td>0.060736</td>
-      <td>16.068080</td>
+      <td>16.068075</td>
       <td>E</td>
       <td>0.152547</td>
       <td>0.038191</td>
@@ -260,7 +270,7 @@ mendel_berteome.df
 </table>
 <p>6 rows × 26 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fc9f64ed-b8b8-433f-bc51-a92954702041')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e5f727fc-7e2a-4d82-b367-c0539274e080')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -311,12 +321,12 @@ mendel_berteome.df
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fc9f64ed-b8b8-433f-bc51-a92954702041 button.colab-df-convert');
+          document.querySelector('#df-e5f727fc-7e2a-4d82-b367-c0539274e080 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fc9f64ed-b8b8-433f-bc51-a92954702041');
+          const element = document.querySelector('#df-e5f727fc-7e2a-4d82-b367-c0539274e080');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -371,13 +381,13 @@ recorded as following using the `scoreSeq()` function
 print(mendel_berteome.wtSeq, mendel_berteome.wtSeqScore)
 ```
 
-    MENDEL 0.06513680818699674
+    MENDEL 0.06513695385878104
 
 ``` python
 print(mendel_berteome.topAASeq, mendel_berteome.topAASeqScore)
 ```
 
-    ELELLE 0.12703558564775272
+    ELELLE 0.127035315825644
 
 To test the score of another given protein of the same length as the
 input provide it to `scoreSeq()`
@@ -386,7 +396,7 @@ input provide it to `scoreSeq()`
 mendel_berteome.scoreSeq("LEDNEM")
 ```
 
-    0.08294893247204337
+    0.08294879426692443
 
 ## Amino acid correlation
 
@@ -398,7 +408,7 @@ predictions of the different amino acids are to each other, the
 mendel_berteome.aa_correlation()
 ```
 
-  <div id="df-45d530d7-40cf-4d2b-8b2c-4eeb29ebbd58">
+  <div id="df-b5a45e62-8d46-44b2-8dd4-42bd09618271">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -446,465 +456,465 @@ mendel_berteome.aa_correlation()
       <td>1.000000</td>
       <td>0.728715</td>
       <td>0.235810</td>
-      <td>-0.389881</td>
-      <td>0.879476</td>
-      <td>0.295942</td>
-      <td>0.745626</td>
-      <td>0.281984</td>
-      <td>-0.521585</td>
-      <td>0.733507</td>
-      <td>-0.720196</td>
-      <td>-0.611638</td>
-      <td>0.079974</td>
-      <td>-0.433480</td>
-      <td>-0.010743</td>
-      <td>0.051074</td>
-      <td>-0.411039</td>
-      <td>0.833228</td>
-      <td>0.585931</td>
+      <td>-0.389880</td>
+      <td>0.879478</td>
+      <td>0.295939</td>
+      <td>0.745629</td>
+      <td>0.281994</td>
+      <td>-0.521591</td>
+      <td>0.733512</td>
+      <td>-0.720194</td>
+      <td>-0.611639</td>
+      <td>0.079973</td>
+      <td>-0.433475</td>
+      <td>-0.010752</td>
+      <td>0.051076</td>
+      <td>-0.411044</td>
+      <td>0.833235</td>
+      <td>0.585926</td>
       <td>0.854028</td>
     </tr>
     <tr>
       <th>C</th>
       <td>0.728715</td>
       <td>1.000000</td>
-      <td>-0.335088</td>
-      <td>-0.816557</td>
-      <td>0.854113</td>
-      <td>0.231246</td>
-      <td>0.948530</td>
-      <td>0.774245</td>
-      <td>-0.042328</td>
+      <td>-0.335086</td>
+      <td>-0.816555</td>
+      <td>0.854112</td>
+      <td>0.231240</td>
+      <td>0.948531</td>
+      <td>0.774243</td>
+      <td>-0.042334</td>
       <td>0.466360</td>
-      <td>-0.382039</td>
-      <td>-0.235091</td>
-      <td>0.369492</td>
-      <td>0.063831</td>
-      <td>0.313224</td>
+      <td>-0.382031</td>
+      <td>-0.235096</td>
+      <td>0.369489</td>
+      <td>0.063834</td>
+      <td>0.313217</td>
       <td>0.638680</td>
-      <td>0.247716</td>
-      <td>0.876382</td>
-      <td>0.736406</td>
+      <td>0.247711</td>
+      <td>0.876376</td>
+      <td>0.736407</td>
       <td>0.923179</td>
     </tr>
     <tr>
       <th>D</th>
       <td>0.235810</td>
-      <td>-0.335088</td>
+      <td>-0.335086</td>
       <td>1.000000</td>
-      <td>0.765979</td>
-      <td>0.084235</td>
-      <td>-0.105942</td>
-      <td>-0.311789</td>
-      <td>-0.822667</td>
-      <td>-0.909459</td>
-      <td>0.087417</td>
-      <td>-0.275036</td>
-      <td>-0.582001</td>
-      <td>-0.599210</td>
-      <td>-0.924921</td>
-      <td>-0.890908</td>
-      <td>-0.671450</td>
-      <td>-0.903985</td>
-      <td>0.053578</td>
-      <td>-0.545097</td>
+      <td>0.765980</td>
+      <td>0.084237</td>
+      <td>-0.105943</td>
+      <td>-0.311785</td>
+      <td>-0.822663</td>
+      <td>-0.909457</td>
+      <td>0.087421</td>
+      <td>-0.275042</td>
+      <td>-0.581996</td>
+      <td>-0.599214</td>
+      <td>-0.924922</td>
+      <td>-0.890910</td>
+      <td>-0.671449</td>
+      <td>-0.903984</td>
+      <td>0.053589</td>
+      <td>-0.545103</td>
       <td>-0.021774</td>
     </tr>
     <tr>
       <th>E</th>
-      <td>-0.389881</td>
-      <td>-0.816557</td>
-      <td>0.765979</td>
+      <td>-0.389880</td>
+      <td>-0.816555</td>
+      <td>0.765980</td>
       <td>1.000000</td>
-      <td>-0.555587</td>
-      <td>-0.275369</td>
-      <td>-0.756602</td>
-      <td>-0.960438</td>
-      <td>-0.445065</td>
-      <td>-0.449610</td>
-      <td>0.096603</td>
-      <td>-0.027768</td>
-      <td>-0.732525</td>
-      <td>-0.612381</td>
-      <td>-0.710520</td>
-      <td>-0.797273</td>
-      <td>-0.600746</td>
-      <td>-0.555545</td>
-      <td>-0.767344</td>
-      <td>-0.570188</td>
+      <td>-0.555584</td>
+      <td>-0.275365</td>
+      <td>-0.756599</td>
+      <td>-0.960437</td>
+      <td>-0.445062</td>
+      <td>-0.449607</td>
+      <td>0.096590</td>
+      <td>-0.027763</td>
+      <td>-0.732526</td>
+      <td>-0.612387</td>
+      <td>-0.710517</td>
+      <td>-0.797275</td>
+      <td>-0.600745</td>
+      <td>-0.555534</td>
+      <td>-0.767346</td>
+      <td>-0.570185</td>
     </tr>
     <tr>
       <th>F</th>
-      <td>0.879476</td>
-      <td>0.854113</td>
-      <td>0.084235</td>
-      <td>-0.555587</td>
+      <td>0.879478</td>
+      <td>0.854112</td>
+      <td>0.084237</td>
+      <td>-0.555584</td>
       <td>1.000000</td>
       <td>0.456554</td>
-      <td>0.850718</td>
-      <td>0.485913</td>
-      <td>-0.477462</td>
-      <td>0.699525</td>
-      <td>-0.622554</td>
+      <td>0.850721</td>
+      <td>0.485917</td>
+      <td>-0.477467</td>
+      <td>0.699526</td>
+      <td>-0.622552</td>
       <td>-0.579098</td>
-      <td>0.359113</td>
-      <td>-0.254101</td>
-      <td>-0.072730</td>
-      <td>0.316786</td>
-      <td>-0.244819</td>
-      <td>0.988905</td>
-      <td>0.546930</td>
+      <td>0.359107</td>
+      <td>-0.254099</td>
+      <td>-0.072739</td>
+      <td>0.316781</td>
+      <td>-0.244826</td>
+      <td>0.988906</td>
+      <td>0.546931</td>
       <td>0.916871</td>
     </tr>
     <tr>
       <th>G</th>
-      <td>0.295942</td>
-      <td>0.231246</td>
-      <td>-0.105942</td>
-      <td>-0.275369</td>
+      <td>0.295939</td>
+      <td>0.231240</td>
+      <td>-0.105943</td>
+      <td>-0.275365</td>
       <td>0.456554</td>
       <td>1.000000</td>
-      <td>0.469726</td>
-      <td>0.397903</td>
-      <td>-0.077726</td>
-      <td>0.311330</td>
-      <td>-0.730925</td>
-      <td>0.058535</td>
-      <td>0.495876</td>
-      <td>0.101607</td>
-      <td>0.103240</td>
-      <td>-0.197845</td>
-      <td>-0.268707</td>
-      <td>0.464570</td>
-      <td>0.501197</td>
-      <td>0.351616</td>
+      <td>0.469717</td>
+      <td>0.397913</td>
+      <td>-0.077729</td>
+      <td>0.311335</td>
+      <td>-0.730916</td>
+      <td>0.058536</td>
+      <td>0.495873</td>
+      <td>0.101611</td>
+      <td>0.103227</td>
+      <td>-0.197846</td>
+      <td>-0.268709</td>
+      <td>0.464575</td>
+      <td>0.501189</td>
+      <td>0.351613</td>
     </tr>
     <tr>
       <th>H</th>
-      <td>0.745626</td>
-      <td>0.948530</td>
-      <td>-0.311789</td>
-      <td>-0.756602</td>
-      <td>0.850718</td>
-      <td>0.469726</td>
+      <td>0.745629</td>
+      <td>0.948531</td>
+      <td>-0.311785</td>
+      <td>-0.756599</td>
+      <td>0.850721</td>
+      <td>0.469717</td>
       <td>1.000000</td>
-      <td>0.780561</td>
-      <td>-0.042413</td>
-      <td>0.403463</td>
-      <td>-0.613985</td>
-      <td>-0.096182</td>
-      <td>0.331736</td>
+      <td>0.780563</td>
+      <td>-0.042422</td>
+      <td>0.403466</td>
+      <td>-0.613977</td>
+      <td>-0.096189</td>
+      <td>0.331730</td>
       <td>0.020781</td>
-      <td>0.334197</td>
-      <td>0.428618</td>
-      <td>0.133952</td>
+      <td>0.334186</td>
+      <td>0.428619</td>
+      <td>0.133945</td>
       <td>0.884543</td>
-      <td>0.852826</td>
-      <td>0.949145</td>
+      <td>0.852824</td>
+      <td>0.949147</td>
     </tr>
     <tr>
       <th>I</th>
-      <td>0.281984</td>
-      <td>0.774245</td>
-      <td>-0.822667</td>
-      <td>-0.960438</td>
-      <td>0.485913</td>
-      <td>0.397903</td>
-      <td>0.780561</td>
+      <td>0.281994</td>
+      <td>0.774243</td>
+      <td>-0.822663</td>
+      <td>-0.960437</td>
+      <td>0.485917</td>
+      <td>0.397913</td>
+      <td>0.780563</td>
       <td>1.000000</td>
-      <td>0.529274</td>
-      <td>0.250579</td>
-      <td>-0.168629</td>
-      <td>0.251701</td>
+      <td>0.529266</td>
+      <td>0.250584</td>
+      <td>-0.168636</td>
+      <td>0.251695</td>
       <td>0.680964</td>
-      <td>0.638906</td>
-      <td>0.732241</td>
-      <td>0.718695</td>
-      <td>0.641516</td>
-      <td>0.519193</td>
-      <td>0.815986</td>
-      <td>0.560868</td>
+      <td>0.638904</td>
+      <td>0.732240</td>
+      <td>0.718683</td>
+      <td>0.641502</td>
+      <td>0.519188</td>
+      <td>0.816000</td>
+      <td>0.560873</td>
     </tr>
     <tr>
       <th>K</th>
-      <td>-0.521585</td>
-      <td>-0.042328</td>
-      <td>-0.909459</td>
-      <td>-0.445065</td>
-      <td>-0.477462</td>
-      <td>-0.077726</td>
-      <td>-0.042413</td>
-      <td>0.529274</td>
+      <td>-0.521591</td>
+      <td>-0.042334</td>
+      <td>-0.909457</td>
+      <td>-0.445062</td>
+      <td>-0.477467</td>
+      <td>-0.077729</td>
+      <td>-0.042422</td>
+      <td>0.529266</td>
       <td>1.000000</td>
-      <td>-0.363198</td>
-      <td>0.430711</td>
-      <td>0.773596</td>
-      <td>0.335641</td>
-      <td>0.889436</td>
-      <td>0.850882</td>
-      <td>0.411445</td>
-      <td>0.872259</td>
-      <td>-0.447153</td>
+      <td>-0.363205</td>
+      <td>0.430718</td>
+      <td>0.773594</td>
+      <td>0.335643</td>
+      <td>0.889435</td>
+      <td>0.850884</td>
+      <td>0.411444</td>
+      <td>0.872260</td>
+      <td>-0.447166</td>
       <td>0.317516</td>
-      <td>-0.325409</td>
+      <td>-0.325412</td>
     </tr>
     <tr>
       <th>L</th>
-      <td>0.733507</td>
+      <td>0.733512</td>
       <td>0.466360</td>
-      <td>0.087417</td>
-      <td>-0.449610</td>
-      <td>0.699525</td>
-      <td>0.311330</td>
-      <td>0.403463</td>
-      <td>0.250579</td>
-      <td>-0.363198</td>
+      <td>0.087421</td>
+      <td>-0.449607</td>
+      <td>0.699526</td>
+      <td>0.311335</td>
+      <td>0.403466</td>
+      <td>0.250584</td>
+      <td>-0.363205</td>
       <td>1.000000</td>
-      <td>-0.360747</td>
-      <td>-0.779561</td>
-      <td>0.554168</td>
-      <td>-0.037799</td>
-      <td>0.062691</td>
-      <td>0.196182</td>
-      <td>-0.320035</td>
-      <td>0.588133</td>
-      <td>0.326965</td>
-      <td>0.436262</td>
+      <td>-0.360750</td>
+      <td>-0.779562</td>
+      <td>0.554163</td>
+      <td>-0.037801</td>
+      <td>0.062683</td>
+      <td>0.196178</td>
+      <td>-0.320043</td>
+      <td>0.588138</td>
+      <td>0.326964</td>
+      <td>0.436263</td>
     </tr>
     <tr>
       <th>M</th>
-      <td>-0.720196</td>
-      <td>-0.382039</td>
-      <td>-0.275036</td>
-      <td>0.096603</td>
-      <td>-0.622554</td>
-      <td>-0.730925</td>
-      <td>-0.613985</td>
-      <td>-0.168629</td>
-      <td>0.430711</td>
-      <td>-0.360747</td>
+      <td>-0.720194</td>
+      <td>-0.382031</td>
+      <td>-0.275042</td>
+      <td>0.096590</td>
+      <td>-0.622552</td>
+      <td>-0.730916</td>
+      <td>-0.613977</td>
+      <td>-0.168636</td>
+      <td>0.430718</td>
+      <td>-0.360750</td>
       <td>1.000000</td>
-      <td>0.161156</td>
-      <td>0.038805</td>
-      <td>0.444461</td>
-      <td>0.054104</td>
-      <td>0.430607</td>
-      <td>0.575776</td>
-      <td>-0.620557</td>
-      <td>-0.596739</td>
-      <td>-0.652702</td>
+      <td>0.161152</td>
+      <td>0.038821</td>
+      <td>0.444465</td>
+      <td>0.054119</td>
+      <td>0.430616</td>
+      <td>0.575785</td>
+      <td>-0.620563</td>
+      <td>-0.596729</td>
+      <td>-0.652699</td>
     </tr>
     <tr>
       <th>N</th>
-      <td>-0.611638</td>
-      <td>-0.235091</td>
-      <td>-0.582001</td>
-      <td>-0.027768</td>
+      <td>-0.611639</td>
+      <td>-0.235096</td>
+      <td>-0.581996</td>
+      <td>-0.027763</td>
       <td>-0.579098</td>
-      <td>0.058535</td>
-      <td>-0.096182</td>
-      <td>0.251701</td>
-      <td>0.773596</td>
-      <td>-0.779561</td>
-      <td>0.161156</td>
+      <td>0.058536</td>
+      <td>-0.096189</td>
+      <td>0.251695</td>
+      <td>0.773594</td>
+      <td>-0.779562</td>
+      <td>0.161152</td>
       <td>1.000000</td>
-      <td>-0.116805</td>
-      <td>0.493948</td>
-      <td>0.512856</td>
-      <td>-0.030982</td>
-      <td>0.583403</td>
-      <td>-0.486078</td>
-      <td>0.203202</td>
-      <td>-0.307124</td>
+      <td>-0.116807</td>
+      <td>0.493941</td>
+      <td>0.512855</td>
+      <td>-0.030990</td>
+      <td>0.583399</td>
+      <td>-0.486083</td>
+      <td>0.203204</td>
+      <td>-0.307123</td>
     </tr>
     <tr>
       <th>P</th>
-      <td>0.079974</td>
-      <td>0.369492</td>
-      <td>-0.599210</td>
-      <td>-0.732525</td>
-      <td>0.359113</td>
-      <td>0.495876</td>
-      <td>0.331736</td>
+      <td>0.079973</td>
+      <td>0.369489</td>
+      <td>-0.599214</td>
+      <td>-0.732526</td>
+      <td>0.359107</td>
+      <td>0.495873</td>
+      <td>0.331730</td>
       <td>0.680964</td>
-      <td>0.335641</td>
-      <td>0.554168</td>
-      <td>0.038805</td>
-      <td>-0.116805</td>
+      <td>0.335643</td>
+      <td>0.554163</td>
+      <td>0.038821</td>
+      <td>-0.116807</td>
       <td>1.000000</td>
-      <td>0.711239</td>
-      <td>0.444692</td>
-      <td>0.584902</td>
-      <td>0.362906</td>
-      <td>0.320287</td>
+      <td>0.711244</td>
+      <td>0.444691</td>
+      <td>0.584905</td>
+      <td>0.362911</td>
+      <td>0.320277</td>
       <td>0.353894</td>
-      <td>0.130560</td>
+      <td>0.130555</td>
     </tr>
     <tr>
       <th>Q</th>
-      <td>-0.433480</td>
-      <td>0.063831</td>
-      <td>-0.924921</td>
-      <td>-0.612381</td>
-      <td>-0.254101</td>
-      <td>0.101607</td>
+      <td>-0.433475</td>
+      <td>0.063834</td>
+      <td>-0.924922</td>
+      <td>-0.612387</td>
+      <td>-0.254099</td>
+      <td>0.101611</td>
       <td>0.020781</td>
-      <td>0.638906</td>
-      <td>0.889436</td>
-      <td>-0.037799</td>
-      <td>0.444461</td>
-      <td>0.493948</td>
-      <td>0.711239</td>
+      <td>0.638904</td>
+      <td>0.889435</td>
+      <td>-0.037801</td>
+      <td>0.444465</td>
+      <td>0.493941</td>
+      <td>0.711244</td>
       <td>1.000000</td>
-      <td>0.778680</td>
-      <td>0.589466</td>
-      <td>0.823069</td>
-      <td>-0.252465</td>
-      <td>0.281352</td>
-      <td>-0.272664</td>
+      <td>0.778685</td>
+      <td>0.589468</td>
+      <td>0.823070</td>
+      <td>-0.252472</td>
+      <td>0.281362</td>
+      <td>-0.272660</td>
     </tr>
     <tr>
       <th>R</th>
-      <td>-0.010743</td>
-      <td>0.313224</td>
-      <td>-0.890908</td>
-      <td>-0.710520</td>
-      <td>-0.072730</td>
-      <td>0.103240</td>
-      <td>0.334197</td>
-      <td>0.732241</td>
-      <td>0.850882</td>
-      <td>0.062691</td>
-      <td>0.054104</td>
-      <td>0.512856</td>
-      <td>0.444692</td>
-      <td>0.778680</td>
+      <td>-0.010752</td>
+      <td>0.313217</td>
+      <td>-0.890910</td>
+      <td>-0.710517</td>
+      <td>-0.072739</td>
+      <td>0.103227</td>
+      <td>0.334186</td>
+      <td>0.732240</td>
+      <td>0.850884</td>
+      <td>0.062683</td>
+      <td>0.054119</td>
+      <td>0.512855</td>
+      <td>0.444691</td>
+      <td>0.778685</td>
       <td>1.000000</td>
-      <td>0.432140</td>
-      <td>0.713219</td>
-      <td>-0.081304</td>
-      <td>0.706982</td>
-      <td>0.066204</td>
+      <td>0.432145</td>
+      <td>0.713224</td>
+      <td>-0.081317</td>
+      <td>0.706977</td>
+      <td>0.066199</td>
     </tr>
     <tr>
       <th>S</th>
-      <td>0.051074</td>
+      <td>0.051076</td>
       <td>0.638680</td>
-      <td>-0.671450</td>
-      <td>-0.797273</td>
-      <td>0.316786</td>
-      <td>-0.197845</td>
-      <td>0.428618</td>
-      <td>0.718695</td>
-      <td>0.411445</td>
-      <td>0.196182</td>
-      <td>0.430607</td>
-      <td>-0.030982</td>
-      <td>0.584902</td>
-      <td>0.589466</td>
-      <td>0.432140</td>
+      <td>-0.671449</td>
+      <td>-0.797275</td>
+      <td>0.316781</td>
+      <td>-0.197846</td>
+      <td>0.428619</td>
+      <td>0.718683</td>
+      <td>0.411444</td>
+      <td>0.196178</td>
+      <td>0.430616</td>
+      <td>-0.030990</td>
+      <td>0.584905</td>
+      <td>0.589468</td>
+      <td>0.432145</td>
       <td>1.000000</td>
-      <td>0.762128</td>
-      <td>0.338232</td>
-      <td>0.276276</td>
-      <td>0.313997</td>
+      <td>0.762126</td>
+      <td>0.338214</td>
+      <td>0.276284</td>
+      <td>0.313994</td>
     </tr>
     <tr>
       <th>T</th>
-      <td>-0.411039</td>
-      <td>0.247716</td>
-      <td>-0.903985</td>
-      <td>-0.600746</td>
-      <td>-0.244819</td>
-      <td>-0.268707</td>
-      <td>0.133952</td>
-      <td>0.641516</td>
-      <td>0.872259</td>
-      <td>-0.320035</td>
-      <td>0.575776</td>
-      <td>0.583403</td>
-      <td>0.362906</td>
-      <td>0.823069</td>
-      <td>0.713219</td>
-      <td>0.762128</td>
+      <td>-0.411044</td>
+      <td>0.247711</td>
+      <td>-0.903984</td>
+      <td>-0.600745</td>
+      <td>-0.244826</td>
+      <td>-0.268709</td>
+      <td>0.133945</td>
+      <td>0.641502</td>
+      <td>0.872260</td>
+      <td>-0.320043</td>
+      <td>0.575785</td>
+      <td>0.583399</td>
+      <td>0.362911</td>
+      <td>0.823070</td>
+      <td>0.713224</td>
+      <td>0.762126</td>
       <td>1.000000</td>
-      <td>-0.191152</td>
-      <td>0.265527</td>
-      <td>-0.089419</td>
+      <td>-0.191172</td>
+      <td>0.265531</td>
+      <td>-0.089424</td>
     </tr>
     <tr>
       <th>V</th>
-      <td>0.833228</td>
-      <td>0.876382</td>
-      <td>0.053578</td>
-      <td>-0.555545</td>
-      <td>0.988905</td>
-      <td>0.464570</td>
+      <td>0.833235</td>
+      <td>0.876376</td>
+      <td>0.053589</td>
+      <td>-0.555534</td>
+      <td>0.988906</td>
+      <td>0.464575</td>
       <td>0.884543</td>
-      <td>0.519193</td>
-      <td>-0.447153</td>
-      <td>0.588133</td>
-      <td>-0.620557</td>
-      <td>-0.486078</td>
-      <td>0.320287</td>
-      <td>-0.252465</td>
-      <td>-0.081304</td>
-      <td>0.338232</td>
-      <td>-0.191152</td>
+      <td>0.519188</td>
+      <td>-0.447166</td>
+      <td>0.588138</td>
+      <td>-0.620563</td>
+      <td>-0.486083</td>
+      <td>0.320277</td>
+      <td>-0.252472</td>
+      <td>-0.081317</td>
+      <td>0.338214</td>
+      <td>-0.191172</td>
       <td>1.000000</td>
       <td>0.557270</td>
-      <td>0.944824</td>
+      <td>0.944823</td>
     </tr>
     <tr>
       <th>W</th>
-      <td>0.585931</td>
-      <td>0.736406</td>
-      <td>-0.545097</td>
-      <td>-0.767344</td>
-      <td>0.546930</td>
-      <td>0.501197</td>
-      <td>0.852826</td>
-      <td>0.815986</td>
+      <td>0.585926</td>
+      <td>0.736407</td>
+      <td>-0.545103</td>
+      <td>-0.767346</td>
+      <td>0.546931</td>
+      <td>0.501189</td>
+      <td>0.852824</td>
+      <td>0.816000</td>
       <td>0.317516</td>
-      <td>0.326965</td>
-      <td>-0.596739</td>
-      <td>0.203202</td>
+      <td>0.326964</td>
+      <td>-0.596729</td>
+      <td>0.203204</td>
       <td>0.353894</td>
-      <td>0.281352</td>
-      <td>0.706982</td>
-      <td>0.276276</td>
-      <td>0.265527</td>
+      <td>0.281362</td>
+      <td>0.706977</td>
+      <td>0.276284</td>
+      <td>0.265531</td>
       <td>0.557270</td>
       <td>1.000000</td>
-      <td>0.694811</td>
+      <td>0.694812</td>
     </tr>
     <tr>
       <th>Y</th>
       <td>0.854028</td>
       <td>0.923179</td>
       <td>-0.021774</td>
-      <td>-0.570188</td>
+      <td>-0.570185</td>
       <td>0.916871</td>
-      <td>0.351616</td>
-      <td>0.949145</td>
-      <td>0.560868</td>
-      <td>-0.325409</td>
-      <td>0.436262</td>
-      <td>-0.652702</td>
-      <td>-0.307124</td>
-      <td>0.130560</td>
-      <td>-0.272664</td>
-      <td>0.066204</td>
-      <td>0.313997</td>
-      <td>-0.089419</td>
-      <td>0.944824</td>
-      <td>0.694811</td>
+      <td>0.351613</td>
+      <td>0.949147</td>
+      <td>0.560873</td>
+      <td>-0.325412</td>
+      <td>0.436263</td>
+      <td>-0.652699</td>
+      <td>-0.307123</td>
+      <td>0.130555</td>
+      <td>-0.272660</td>
+      <td>0.066199</td>
+      <td>0.313994</td>
+      <td>-0.089424</td>
+      <td>0.944823</td>
+      <td>0.694812</td>
       <td>1.000000</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-45d530d7-40cf-4d2b-8b2c-4eeb29ebbd58')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-b5a45e62-8d46-44b2-8dd4-42bd09618271')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -955,12 +965,12 @@ mendel_berteome.aa_correlation()
 
       <script>
         const buttonEl =
-          document.querySelector('#df-45d530d7-40cf-4d2b-8b2c-4eeb29ebbd58 button.colab-df-convert');
+          document.querySelector('#df-b5a45e62-8d46-44b2-8dd4-42bd09618271 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-45d530d7-40cf-4d2b-8b2c-4eeb29ebbd58');
+          const element = document.querySelector('#df-b5a45e62-8d46-44b2-8dd4-42bd09618271');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -996,7 +1006,7 @@ from berteome import generate
 generate.top_k_variants(mendel_berteome, 3)
 ```
 
-  <div id="df-fdeaf299-cd5f-4003-9758-91e750cc9b48">
+  <div id="df-2a466348-412a-470f-9ddd-c41f12392126">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1114,7 +1124,7 @@ generate.top_k_variants(mendel_berteome, 3)
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-fdeaf299-cd5f-4003-9758-91e750cc9b48')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-2a466348-412a-470f-9ddd-c41f12392126')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1165,12 +1175,12 @@ generate.top_k_variants(mendel_berteome, 3)
 
       <script>
         const buttonEl =
-          document.querySelector('#df-fdeaf299-cd5f-4003-9758-91e750cc9b48 button.colab-df-convert');
+          document.querySelector('#df-2a466348-412a-470f-9ddd-c41f12392126 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-fdeaf299-cd5f-4003-9758-91e750cc9b48');
+          const element = document.querySelector('#df-2a466348-412a-470f-9ddd-c41f12392126');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1207,7 +1217,7 @@ provided by berteome, you can use `n_random_seqs`
 generate.n_random_seqs(mendel_berteome, 10)
 ```
 
-  <div id="df-f528d1bb-cefa-4897-b695-1cc7bc7b7734">
+  <div id="df-5fb450f0-be93-455e-8ffe-acb8fa0bd578">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1234,58 +1244,58 @@ generate.n_random_seqs(mendel_berteome, 10)
   <tbody>
     <tr>
       <th>0</th>
-      <td>QSSESS</td>
-      <td>0.058610</td>
+      <td>WYPDRI</td>
+      <td>0.035417</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>NDHGWH</td>
-      <td>0.034827</td>
+      <td>AIWDFM</td>
+      <td>0.042938</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>SAKCVK</td>
-      <td>0.056908</td>
+      <td>VIATPE</td>
+      <td>0.064649</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>PLRLMA</td>
-      <td>0.056149</td>
+      <td>APVMHK</td>
+      <td>0.048056</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>IQVQFS</td>
-      <td>0.049592</td>
+      <td>WRTYTY</td>
+      <td>0.031315</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>MTDEIA</td>
-      <td>0.081339</td>
+      <td>YESFPH</td>
+      <td>0.037034</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>PVFAVM</td>
-      <td>0.044242</td>
+      <td>YDEGGA</td>
+      <td>0.065425</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>NMSSVW</td>
-      <td>0.050866</td>
+      <td>PHTVQL</td>
+      <td>0.037249</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>DYYIIQ</td>
-      <td>0.047647</td>
+      <td>FHNHWM</td>
+      <td>0.025564</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>GQLEPM</td>
-      <td>0.053943</td>
+      <td>ERAPYK</td>
+      <td>0.066202</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f528d1bb-cefa-4897-b695-1cc7bc7b7734')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5fb450f0-be93-455e-8ffe-acb8fa0bd578')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1336,12 +1346,12 @@ generate.n_random_seqs(mendel_berteome, 10)
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f528d1bb-cefa-4897-b695-1cc7bc7b7734 button.colab-df-convert');
+          document.querySelector('#df-5fb450f0-be93-455e-8ffe-acb8fa0bd578 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f528d1bb-cefa-4897-b695-1cc7bc7b7734');
+          const element = document.querySelector('#df-5fb450f0-be93-455e-8ffe-acb8fa0bd578');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1366,7 +1376,65 @@ generate.n_random_seqs(mendel_berteome, 10)
 - `score` is the average score of the amino acids chosen in the randomly
   generated sequence
 
-## Plotting
+# Plots
+
+``` python
+from berteome import berteome_plot
+```
+
+If you would like to visualize what how `wtScore` varies across the
+sequence, do the following:
+
+``` python
+berteome_plot.wtScore_plot(mendel_berteome)
+```
+
+    (<Figure size 432x288 with 1 Axes>,
+     <matplotlib.axes._subplots.AxesSubplot at 0x7fc806ab2460>)
+
+![](index_files/figure-commonmark/cell-14-output-2.png)
+
+Additionally, you can plot the n_effective to visualize sites that the
+model infers as having a lower likelyhood of possible substitutions.
+
+``` python
+berteome_plot.n_effective_plot(mendel_berteome)
+```
+
+    (<Figure size 432x288 with 1 Axes>,
+     <matplotlib.axes._subplots.AxesSubplot at 0x7fc80699d070>)
+
+![](index_files/figure-commonmark/cell-15-output-2.png)
+
+`berteome` also provides a method for visually inspecting the
+correlations of the amino acid predictions
+
+``` python
+berteome_plot.aa_correlation_plot(mendel_berteome)
+```
+
+    <seaborn.matrix.ClusterGrid at 0x7fc80640bb80>
+
+![](index_files/figure-commonmark/cell-16-output-2.png)
+
+If you would like to get a visual of the `berteome` predictions in the
+form of a `seqlogo`, that can also be accomplished! Doing so potentially
+reqires having a few additional dependencies installed, something along
+the lines of:
+
+``` python
+!apt install ghostscript
+```
+
+``` python
+!apt-get install -y pdf2svg
+```
+
+``` python
+berteome_plot.seqlogo_plot(mendel_berteome)
+```
+
+![](index_files/figure-commonmark/cell-19-output-1.svg)
 
 # Development
 
@@ -1395,55 +1463,69 @@ particular commit hash of `berteome` you can do the following:
       Successfully uninstalled berteome-0.1.5
 
 ``` python
-!pip install "berteome @ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4"
+!pip install "berteome @ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2"
 ```
 
     Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-    Collecting berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4
-      Cloning https://github.com/tijeco/berteome (to revision b10ac07f31269a13a1bf8af437ca762b917b68a4) to /tmp/pip-install-q34jqt3g/berteome_b3916552555d419ba5765fe58f1d0bde
-      Running command git clone -q https://github.com/tijeco/berteome /tmp/pip-install-q34jqt3g/berteome_b3916552555d419ba5765fe58f1d0bde
-      Running command git rev-parse -q --verify 'sha^b10ac07f31269a13a1bf8af437ca762b917b68a4'
-      Running command git fetch -q https://github.com/tijeco/berteome b10ac07f31269a13a1bf8af437ca762b917b68a4
-      Running command git checkout -q b10ac07f31269a13a1bf8af437ca762b917b68a4
-    Requirement already satisfied: pip in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (21.1.3)
-    Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (21.3)
-    Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.3.5)
-    Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.21.6)
-    Requirement already satisfied: seqlogo in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (5.29.8)
-    Requirement already satisfied: transformers in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (4.25.1)
-    Requirement already satisfied: torch in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.13.0+cu116)
-    Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (3.0.9)
-    Requirement already satisfied: python-dateutil>=2.7.3 in /usr/local/lib/python3.8/dist-packages (from pandas->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (2.8.2)
-    Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.8/dist-packages (from pandas->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (2022.6)
-    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.7.3->pandas->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.15.0)
-    Requirement already satisfied: weblogo in /usr/local/lib/python3.8/dist-packages (from seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (3.7.12)
-    Requirement already satisfied: pytest in /usr/local/lib/python3.8/dist-packages (from seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (3.6.4)
-    Requirement already satisfied: ghostscript in /usr/local/lib/python3.8/dist-packages (from seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (0.7)
-    Requirement already satisfied: setuptools>=38.6.0 in /usr/local/lib/python3.8/dist-packages (from ghostscript->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (57.4.0)
-    Requirement already satisfied: py>=1.5.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.11.0)
-    Requirement already satisfied: atomicwrites>=1.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.4.1)
-    Requirement already satisfied: pluggy<0.8,>=0.5 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (0.7.1)
-    Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (22.1.0)
-    Requirement already satisfied: more-itertools>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (9.0.0)
-    Requirement already satisfied: typing-extensions in /usr/local/lib/python3.8/dist-packages (from torch->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (4.4.0)
-    Requirement already satisfied: huggingface-hub<1.0,>=0.10.0 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (0.11.1)
-    Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (0.13.2)
-    Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (6.0)
-    Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (2022.6.2)
-    Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (2.23.0)
-    Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (4.64.1)
-    Requirement already satisfied: filelock in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (3.8.2)
-    Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (3.0.4)
-    Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (2022.12.7)
-    Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.24.3)
-    Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (2.10)
-    Requirement already satisfied: scipy in /usr/local/lib/python3.8/dist-packages (from weblogo->seqlogo->berteome@ git+https://github.com/tijeco/berteome@b10ac07f31269a13a1bf8af437ca762b917b68a4) (1.7.3)
-    Building wheels for collected packages: berteome
+    Collecting berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2
+      Cloning https://github.com/tijeco/berteome (to revision 1e104ce687ed38a21ff72e6b58960aff6e0be6a2) to /tmp/pip-install-luvjcq66/berteome_93d26519699d4c9c816c0799b9962b68
+      Running command git clone --filter=blob:none --quiet https://github.com/tijeco/berteome /tmp/pip-install-luvjcq66/berteome_93d26519699d4c9c816c0799b9962b68
+      Running command git rev-parse -q --verify 'sha^1e104ce687ed38a21ff72e6b58960aff6e0be6a2'
+      Running command git fetch -q https://github.com/tijeco/berteome 1e104ce687ed38a21ff72e6b58960aff6e0be6a2
+      Running command git checkout -q 1e104ce687ed38a21ff72e6b58960aff6e0be6a2
+      Resolved https://github.com/tijeco/berteome to commit 1e104ce687ed38a21ff72e6b58960aff6e0be6a2
+      Preparing metadata (setup.py) ... done
+    Requirement already satisfied: pip in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (22.0.4)
+    Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (21.3)
+    Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.3.5)
+    Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.21.6)
+    Collecting seqlogo
+      Downloading seqlogo-5.29.8.tar.gz (28 kB)
+      Preparing metadata (setup.py) ... done
+    Collecting transformers
+      Downloading transformers-4.25.1-py3-none-any.whl (5.8 MB)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 42.6 MB/s eta 0:00:00
+    Requirement already satisfied: torch in /usr/local/lib/python3.8/dist-packages (from berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.13.0+cu116)
+    Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/local/lib/python3.8/dist-packages (from packaging->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (3.0.9)
+    Requirement already satisfied: python-dateutil>=2.7.3 in /usr/local/lib/python3.8/dist-packages (from pandas->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (2.8.2)
+    Requirement already satisfied: pytz>=2017.3 in /usr/local/lib/python3.8/dist-packages (from pandas->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (2022.7)
+    Collecting weblogo
+      Downloading weblogo-3.7.12-py3-none-any.whl (571 kB)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 571.7/571.7 KB 39.2 MB/s eta 0:00:00
+    Collecting ghostscript
+      Downloading ghostscript-0.7-py2.py3-none-any.whl (25 kB)
+    Requirement already satisfied: pytest in /usr/local/lib/python3.8/dist-packages (from seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (3.6.4)
+    Requirement already satisfied: typing-extensions in /usr/local/lib/python3.8/dist-packages (from torch->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (4.4.0)
+    Requirement already satisfied: filelock in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (3.8.2)
+    Collecting tokenizers!=0.11.3,<0.14,>=0.11.1
+      Downloading tokenizers-0.13.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (7.6 MB)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 78.9 MB/s eta 0:00:00
+    Collecting huggingface-hub<1.0,>=0.10.0
+      Downloading huggingface_hub-0.11.1-py3-none-any.whl (182 kB)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 182.4/182.4 KB 19.9 MB/s eta 0:00:00
+    Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (6.0)
+    Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (2022.6.2)
+    Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (4.64.1)
+    Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (2.25.1)
+    Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.7.3->pandas->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.15.0)
+    Requirement already satisfied: setuptools>=38.6.0 in /usr/local/lib/python3.8/dist-packages (from ghostscript->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (57.4.0)
+    Requirement already satisfied: py>=1.5.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.11.0)
+    Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (22.2.0)
+    Requirement already satisfied: atomicwrites>=1.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.4.1)
+    Requirement already satisfied: pluggy<0.8,>=0.5 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (0.7.1)
+    Requirement already satisfied: more-itertools>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from pytest->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (9.0.0)
+    Requirement already satisfied: chardet<5,>=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (4.0.0)
+    Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (2022.12.7)
+    Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.24.3)
+    Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->transformers->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (2.10)
+    Requirement already satisfied: scipy in /usr/local/lib/python3.8/dist-packages (from weblogo->seqlogo->berteome@ git+https://github.com/tijeco/berteome@1e104ce687ed38a21ff72e6b58960aff6e0be6a2) (1.7.3)
+    Building wheels for collected packages: berteome, seqlogo
       Building wheel for berteome (setup.py) ... done
-      Created wheel for berteome: filename=berteome-0.1.5-py3-none-any.whl size=17286 sha256=caf9b421ccfba8fb2008f42ebe0c23f3414fa7a2006dcae7516ecfebf907bc82
-      Stored in directory: /root/.cache/pip/wheels/b0/b5/72/b41755d52ff8d6a22c281b1b0863c6e1501a41839762b69855
-    Successfully built berteome
-    Installing collected packages: berteome
-    Successfully installed berteome-0.1.5
-
-    Unable to display output for mime type(s): application/vnd.colab-display-data+json
+      Created wheel for berteome: filename=berteome-0.1.5-py3-none-any.whl size=18184 sha256=5e861df9e62c18af9645aea4b0e8032d8d03e3aacbd11dd66a8567aa1bfe2e6d
+      Stored in directory: /root/.cache/pip/wheels/b4/3a/ca/cdd13884728b51fc6a0b5a4d093d746507172dacf725c147dd
+      Building wheel for seqlogo (setup.py) ... done
+      Created wheel for seqlogo: filename=seqlogo-5.29.8-py2.py3-none-any.whl size=19417 sha256=dccf1fe6c88ff6821b6c5ffca1fe1fcb6a69cd35d05e55bcf250a8ad81538c3c
+      Stored in directory: /root/.cache/pip/wheels/e7/f2/16/c7eb18def88636c56ccc5bf482af7ba59a135dc0eb437a125d
+    Successfully built berteome seqlogo
+    Installing collected packages: tokenizers, ghostscript, weblogo, huggingface-hub, transformers, seqlogo, berteome
+    Successfully installed berteome-0.1.5 ghostscript-0.7 huggingface-hub-0.11.1 seqlogo-5.29.8 tokenizers-0.13.2 transformers-4.25.1 weblogo-3.7.12
