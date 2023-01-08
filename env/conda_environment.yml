@@ -1,0 +1,15 @@
+name: berteome
+
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+  - bioconda
+dependencies:
+  - pandas
+  - seqlogo
+  - numpy
+  - transformers=4.25.1
+  - pip
+  # - pip:
+    # - 
