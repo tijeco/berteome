@@ -6,9 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Cat environment.yml
+      - name: Cat conda_environment.yml
         run: |
           cat env/conda_environment.yml
+      
+      - name: install from conda 
+        run: |
+          $CONDA/bin/conda env update --file env/conda_environment.yml --name base
 
 
     # - uses: mamba-org/provision-with-micromamba@main
