@@ -6,15 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install Conda environment from environment.yml
-        uses: mamba-org/provision-with-micromamba@main
+      - name: Cat environment.yml
         with:
-          environment-file: ../env/conda_environment.yml
-      # Linux and macOS
-      - name: Run Python
-        shell: bash -l {0}
         run: |
-          python -c "import numpy"        
+          cat env/conda_environment.yml
 
 
     # - uses: mamba-org/provision-with-micromamba@main
