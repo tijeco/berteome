@@ -1,16 +1,27 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  build:
-    - uses: actions/checkout@v2
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
 
-      - name: Install Conda environment with Micromamba
+      - name: Install Conda environment from environment.yml
         uses: mamba-org/provision-with-micromamba@main
-        with:
-          environment-file: env/conda_environment.yaml
-          environment-name: berteome
+
+      # Linux and macOS
+      - name: Run Python
+        shell: bash -l {0}
         run: |
-          micromamba --version 
+          python -c "import numpy"        
+
+
+    # - uses: mamba-org/provision-with-micromamba@main
+    #     with:
+    #       environment-file: env/conda_environment.yaml
+    #       environment-name: berteome
+    #     run: |
+    #       micromamba --version 
 
         
         # with:
