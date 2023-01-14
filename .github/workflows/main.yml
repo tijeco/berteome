@@ -9,7 +9,7 @@ jobs:
       - name: Install Conda environment from environment.yml
         uses: mamba-org/provision-with-micromamba@main
         with:
-          environment-file: env/conda_environment.yaml
+          environment-file: ../env/conda_environment.yaml
 
       # Linux and macOS
       - name: Run Python
